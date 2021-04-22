@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html{
+    background-color: #303030;
+    z-index: 0;
+}
+
+body {
+    background-color: darkgrey;
+}
+
+.img{
+    position:absolute;
+    background-size: 100%;
+    height: 500px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    opacity: 0.3;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav{
+    color: gold;
+    background-color: #303030;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+li {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+}
+
+.darkBackground {
+    color: darkgrey;
+    padding: 5px;
+    background-color: #303030;
+    z-index: 1;
+    border: dot-dash gold 1px;
+}
+
+h1{
+    z-index: 1;
+}
+
+h3{
+    z-index: 1;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+}
+
+.foot{
+    color:gold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+#brilliantSpacer{
+    height: 100px;
+    background-color: #303030;
+}
+
+div.foot>i {
+    height: 35px;
+    width: 35px;
+    padding: 3px;
+}
+#chain{
+
+}
