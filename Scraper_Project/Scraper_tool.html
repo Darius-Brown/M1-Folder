@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container {
+            display: flex;
+            background-color: orange;
+        }
+
+        .card {
+            margin: 20px;
+            padding: 20px;
+            background-color: blue;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <title>Scrape The Web!</title>
+</head>
+<body>
+<h1>Crypto Price Web Scraper</h1>
+
+<h4>Add a New Crypto</h4>
+<input type="text" placeholder="Paste Crypto Url">
+<button type="submit" onclick= "submitCoin()" >submit</button>
+
+<div class="container"></div>
+
+<p>
+    "The goal of this web application is to pull live Crypto currency prices
+    from reputable source, using web scraping in Javascript.
+</p>
+<script>
+    function submitCoin(){
+        const coinValue =document.querySelector('.coin-input').value;
+        //send to server
+    }
+
+
+    function newEl(type, attrs =()) {
+        const el = document.createElement(type);
+        for (let attr in attrs) {
+            const value = attrs[attr];
+            if (attr == 'innerText') el.innerText = value;
+            else el.setAttribute(attr, value);
+        }
+        return el;
+    }
+
+    const crypto = [
+        {name: 'Bitcoin', img: 'https://'},
+        {name: 'Ethereum', img: 'https://'},
+        {name: 'Cardano', img: 'https://'},
+        {name: 'Xrp', img: 'https://'}
+    ]
+
+    const ctr = document.querySelector('.container');
+
+    crypto.forEach(crypto => {
+        const card = newEl('div', {class: 'card'});
+        const title = newEl('h4', {innerText: crypto.name});
+        const img = newEl('img', {src: crypto.img});
+        card.appendChild(title);
+        car.appendChild(img);
+        ctr.appendChild(card);
+    })
+
+
+</script>
+<style>
+    .container {
+        display: flex;
+        background-color: orange;
+    }
+
+    .card {
+        marign: 20px;
+        padding: 20px;
+        background-color: blue;
+    }
+
+</style>
+</body>
+</html>
