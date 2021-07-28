@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background-color: #323272;
+}
+
+nav {
+    background-color: #c1c1c1;
+}
+
+.navbar {
+    color: black;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+p {
+    text-align: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    padding: 1em;
+}
+
+nav a:hover {
+    background-color: #367de9;
+}
+
+nav ul li:nth-child(6) {
+    display: flex;
+    margin-left: auto;
+}
+
+nav ul li:nth-child(5) {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-size: 3em;
+    padding: .2em ;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-size: xxx-large;
+    padding: 1em;
+    color:antiquewhite;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 1em;
+    color: antiquewhite;
+}
+
+.link_list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    list-style: none;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+}
+
+div ol li a{
+    display: flex;
+    padding: 1em;
+}
+
+button:hover {
+    color:darkgrey;
+    background-color: antiquewhite;
+    border: solid 5px darkgrey;
+}
+
+.button {
+    border-radius: 10em;
+    background-color: cornflowerblue;
+    color: black;
+    display: flex;
+    margin: 3em;
+    border: solid white 2px;
+    font-size: large;
+    align-items: center;
+    width: 100%;
+}
