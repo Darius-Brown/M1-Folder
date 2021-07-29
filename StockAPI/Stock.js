@@ -17,7 +17,7 @@ $(document).ready(function() {
             console.log(data);
 
             let match = data.bestMatches[0];
-            let name = match.name;
+            let name = match[Object.keys(match)[0]];
             console.log(match);
             console.log(name);
             $('#result').append(name);
