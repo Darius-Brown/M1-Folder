@@ -20,7 +20,7 @@ $(document).ready(function() {
             let name = match[Object.keys(match)[0]];
             console.log(match);
             console.log(name);
-            $('#result').append(name);
+            $('#result').html(name);
         },
         type: "GET"
     });
